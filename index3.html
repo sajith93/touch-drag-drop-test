@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Movement Example</title>
+  <style>
+    /* CSS for the grid layout */
+    .row {
+  display: flex;
+  column-gap: 1rem;
+  padding: 1rem;
+  border: solid 2px black;
+  background: pink;
+}
+
+.container {
+  width: 100px;
+  height: 200px;
+  padding: 1rem;
+  border: solid 2px black;
+  background: white;
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+</head>
+<body>
+  <h1>Grid Movement Example</h1>
+
+  <div class="row">
+    <div class="container">
+      <img id="drag1" src="https://source.unsplash.com/random/80x80/?cat" draggable="true" />
+    </div>
+    <div class="container">
+      <img id="drag2" src="https://source.unsplash.com/random/80x80/?fruit" draggable="true" />
+    </div>
+    <div class="container">
+      <img id="drag3" src="https://source.unsplash.com/random/80x80/?car" draggable="true" />
+    </div>
+    <div class="container">
+      <img id="drag4" src="https://source.unsplash.com/random/80x80/?dog" draggable="true" />
+    </div>
+  </div>
+  
+
+  <script src="/app3.js"></script>
+</body>
+</html>

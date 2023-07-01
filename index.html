@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Grid Movement Example</title>
+  <style>
+    /* CSS for the grid layout */
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 10px;
+      width: 600px;
+      height: 600px;
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+
+    .cell {
+      background-color: lightgray;
+      border: 1px solid black;
+        box-sizing: border-box;
+    }
+
+    .item {
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+    }
+
+    .item.red {
+      background-color: red;
+    }
+
+    .item.blue {
+      background-color: blue;
+    }
+
+    .item.green {
+      background-color: green;
+    }
+
+    .item.yellow {
+      background-color: yellow;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+</head>
+<body>
+  <h1>Grid Movement Example</h1>
+
+  <div class="grid">
+    <!-- Grid cells -->
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <!-- Add more cells as needed -->
+
+    <!-- Grid items -->
+    <div class="item red"></div>
+    <div class="item blue"></div>
+    <div class="item green"></div>
+    <div class="item yellow"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
