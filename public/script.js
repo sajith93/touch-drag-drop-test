@@ -44,3 +44,4 @@ function drop(event) {
     toContainer.appendChild(draggedImage);
   }
 }
+console.log('reached script')
